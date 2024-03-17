@@ -1,6 +1,9 @@
 function fact(n)
     if n == 0 then
         return 1
+    elseif n<0 then
+        print ("输入不能是负数")
+        return -1
     else
         return n*fact(n-1)
     end
