@@ -27,6 +27,7 @@ end
 
 function addqueen(a, n)
     if n>N then
+    -- if n>N and F==0 then -- 输出第一个解后结束
         printsolution(a)
     else
         for c = 1, N do
