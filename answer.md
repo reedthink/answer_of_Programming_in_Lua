@@ -1,4 +1,7 @@
 # 第一章
+
+1.2 -l参数不要加lua后缀，dofile要dofile('test.lua')
+
 练习1.5 ： 表达式 type(nil)==nil 的值是什么？你可以直接在 Lua 中运行来得到答案，但是你能够解释原因吗？
 > true，因为nil的类型的值和值的类型相同  
 
