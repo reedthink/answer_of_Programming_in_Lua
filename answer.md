@@ -20,3 +20,5 @@ end
 print(arg[0])
 ```
 # 第二章
+八皇后问题，见 eight_queen.lua
+全排列调用 isplaceok 的次数是回溯法的二十倍
