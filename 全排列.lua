@@ -3,7 +3,7 @@ function permute(list, start, endTable)
     endTable = endTable or {}
     if start > #list then
         -- table.insert(endTable, table.concat(list, ", "))
-        table.insert(endTable, list)
+        table.insert(endTable, {table.unpack(list)})
     else
         for i = start, #list do
             list[start], list[i] = list[i], list[start] -- 交换元素
