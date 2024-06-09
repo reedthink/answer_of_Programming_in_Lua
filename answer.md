@@ -83,3 +83,5 @@ https://web.archive.org/web/20150213203512/http://pages.cs.wisc.edu/~cs354-1/bey
 值得一提的是，如果观察后8位，同样能得出64的正确真值，而这个数对16取模依然是0（等效于溢出后的运算结果）
 
 ## 其余题目参考 chapter3.lua
+
+# 第四章 见chapter3.lua
