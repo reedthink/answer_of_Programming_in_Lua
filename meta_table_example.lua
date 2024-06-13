@@ -33,9 +33,8 @@ function Set.tostring(set)
     for e in pairs(set) do
         l[#l + 1] = tostring(e)
     end
-    return "{" .. table.concat(l, ",") .. "}"
+    return "{" .. table.concat(l, ", ") .. "}"
 end
-
 
 -- 直接重新赋值
 function Set.new(l)
@@ -66,6 +65,8 @@ end
 mt.__eq = function(a, b)
     return a <= b and b <= a
 end
+
+mt.__tostring = Set.tostring
 
 -- s1 = Set.new({ 10, 20, 30, 50 })
 -- s2 = Set.new { 30, 1 }

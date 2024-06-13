@@ -8,3 +8,5 @@ print(s1 > s1)
 -- print(s2 * s1)
 print(s1 == (s2 * s1))
 -- 类型不同直接返回false
+
+print(s2)
