@@ -20,6 +20,7 @@ function Set.union(a, b)
 end
 
 function Set.intersection(a, b)
+    print(getmetatable(a), getmetatable(b), mt)
     if getmetatable(a) ~= mt or getmetatable(b) ~= mt then
         error("attempt to 'add' a set with a non-set value", 2)
     end
@@ -67,6 +68,10 @@ mt.__eq = function(a, b)
 end
 
 mt.__tostring = Set.tostring
+
+-- 保护元表
+-- 而且给元表命名了。如果元表的上层表调用getmetable就返回"not your business"
+mt.__metatable = "not your business"
 
 -- s1 = Set.new({ 10, 20, 30, 50 })
 -- s2 = Set.new { 30, 1 }
